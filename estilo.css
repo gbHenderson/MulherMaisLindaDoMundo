@@ -1,21 +1,60 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed:ital@1&family=Sriracha&display=swap');
 
 body{background-color: #C5539B;}
 
 header{background-color: #FF7B9C;
        color: #66465A;
        margin: -25px -8px 0px -8px;
-       border-radius: 0px 0px 30px 30px; }
+       border-radius: 0px 0px 22px 22px; }
 
 header > h4 {padding: 8px;
              text-align: justify;
              font-family:'Sriracha', cursive;
              font-size: 17.7px;}
 
-header > h1 {font-family: 'Poppins', sans-serif;
+header > h1 {font-family: 'Roboto Condensed', sans-serif;
              color:#9F006C;
              font-variant: small-caps;
              font-size: 52px;
              text-align: center;}
+
+main > nav {border: 2px solid black;
+            width: 400px;
+            height: 599px;
+            margin: auto;}
+
+nav#nao{background-image: url(nos/nao.jpg);
+        background-repeat: no-repeat;}
+
+nav#sim{background-image: url(nos/sim.jpg);
+        background-repeat: no-repeat;}
+
+main > p{font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+        font-size: 30px;
+        margin: 0px 0px 10px 0px;
+        padding-top: 150px;}
+
+nav > a{text-decoration: none;}        
+
+nav#nao > a > p:hover{background-color: rgba(0, 0, 0, 0.76);
+                      color: red;}
+
+nav#nao > a > p{text-align: center;
+                padding: 252px 0px 300px 0px;
+                margin: 0px;
+                font-size: 40px;
+                font-family: 'Roboto Condensed', sans-serif;
+                color: rgba(0, 255, 255, 0);}
+
+nav#sim > a > p:hover{background-color: rgba(0, 0, 0, 0.76);
+                      color: green;}
+
+nav#sim > a > p{text-align: center;
+                padding: 204px 0px 300px 0px;
+                margin: 0px;
+                font-size: 40px;
+                font-family: 'Roboto Condensed', sans-serif;
+                color: rgba(0, 255, 255, 0);}
