@@ -35,10 +35,10 @@ nav#nao{background-image: url(nos/nao.jpg);
 nav#sim{background-image: url(nos/sim.jpg);
         background-repeat: no-repeat;}
 
-main > p{font-family: Arial, Helvetica, sans-serif;
+main > p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
-        font-size: 45px;
-        margin: 0px 0px 10px 0px;
+        font-size: 50px;
+        margin-bottom: 5px;
         padding-top: 150px;
         color: #EAA1CF;}
 
@@ -70,5 +70,17 @@ footer{background-color: #FF7B9C;
        margin: 35px -8px -18px -8px;}
 
 footer > p{text-align: center;
-           font-size: 18px;
+           font-size: 15px;
            font-family: Arial, Helvetica, sans-serif;  }
+
+
+
+
+main > p#carta{background-color: white;
+               color: black;
+               font-size: 18px;
+               text-align: left;  
+               line-height: 26px;    
+               font-family: Arial, Helvetica, sans-serif;    
+               padding: 6px 15px 6px 15px;}
+               
