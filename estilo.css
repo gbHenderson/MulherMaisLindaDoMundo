@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed:ital@1&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap');
-@font-face {font-family: 'diablo';
-            src: url('diablo.otf') format('opentype'), url('diablo.ttf') format('truetype');}
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
 /* Página do pedido de namoro */
 
@@ -26,7 +25,7 @@ header > h1 {font-family: 'Roboto Condensed', sans-serif;
              font-size: 52px;
              text-align: center;
              width: 100%;
-             text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.644);   }
+             text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.66);}
 
 main > nav {border: 2px solid black;
             width: 300px;
@@ -52,17 +51,17 @@ main > p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seri
 nav > a{text-decoration: none;}        
 
 nav#nao > a > p:hover{background-color: rgba(0, 0, 0, 0.76);
-                      color: red;}
+                      color: rgb(173, 0, 0);}
 
 nav#nao > a > p{text-align: center;
-                padding: 115px 1px 137px 1px;
+                padding: 155px 1px 137px 1px;
                 margin: 0px;
                 font-size: 70px;
-                font-family: 'diablo', sans-serif;
+                font-family: 'Reenie Beanie', cursive;
                 color: rgba(0, 255, 255, 0);}
 
 nav#sim > a > p:hover{background-color: rgba(0, 0, 0, 0.76);
-                      color: #EAA1CF;
+                      color: rgb(255, 0, 234);
                       font-family: 'Mali', cursive;  }
 
 nav#sim > a > p{text-align: center;
@@ -79,6 +78,15 @@ footer{background-color: #FF7B9C;
 footer > p{text-align: center;
            font-size: 14px;
            font-family: Arial, Helvetica, sans-serif;  }
+
+footer > p > a{text-decoration: none;
+               color: #C5539B;}
+
+footer > p > a:visited{text-decoration: none;
+                       color: #C5539B;}
+
+footer > p > a:hover{text-decoration: underline;
+                     color: #9F006C;}
 
 /* Página da carta */
 
