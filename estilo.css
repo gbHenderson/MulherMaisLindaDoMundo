@@ -105,35 +105,48 @@ main > p#carta{background-color: white;
 
 /* Página do pedido aceito */
 
-main > p.aceito{font-size: 180%;
+main > p#aceito{font-size: 180%;
                 text-align: left;
                 margin: -27px 5vw 80px 5vw;
-                padding: 30px 10px 2px 10px;
+                padding: 31px 10px 2px 12px;
                 font-family: 'Itim', cursive;
                 text-shadow: 1px 1px 3px black;
                 text-indent: 23px;
                 line-height: 43px;
                 background-color: #66465A;
-                border-radius: 0px 0px 10px 10px}
+                border-radius: 0px 0px 10px 10px;
+                box-shadow: 2px 2px 10px black;}
+
+main > p.texto{font-size: 180%;
+               text-align: left;
+               margin: -27px 5vw 80px 5vw;
+               padding: 8px 10px 2px 12px;
+               font-family: 'Itim', cursive;
+               text-shadow: 1px 1px 3px black;
+               text-indent: 23px;
+               line-height: 43px;
+               background-color: #66465A;
+               border-radius: 10px 10px 10px 10px;
+               box-shadow: 2px 2px 10px black;}
 
 main > div.foto{background-image:url(nos/primeira-junto.jpg);
                 background-size: cover;
                 background-attachment: fixed;
                 background-repeat: no-repeat;
                 border-radius: 10px 10px 10px 10px;
-                background-position: center center;}                  
+                background-position: center center;
+                box-shadow: 2px 2px 10px black;}
+
 
 main > div.foto > p.aceitofoto{font-size: 180%;
                     text-align: left;
-                    padding: 1px 10px 2px 10px;
+                    padding: 1px 10px 2px 12px;
                     margin: -27px 5vw 80px 5vw;
                     text-shadow: 0px 0px 0px black;
                     font-family: 'Itim', cursive;
                     line-height: 43px;
                     text-indent: 23px;
                     color: #66465a91;
-                    background-color: #eaa1cfab;
-                    transition-delay: 10s;
-                    transition-duration: 2s;}
+                    background-color: #eaa1cf6c;}
                 
    
