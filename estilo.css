@@ -144,7 +144,6 @@ main > div.foto{background-image:url(nos/primeira-junto.jpg);
                 background-position: center center;
                 box-shadow: 2px 2px 10px black;}
 
-
 main > div.foto > p.aceitofoto{font-size: 180%;
                                text-align: left;
                                padding: 1px 10px 2px 12px;
@@ -165,4 +164,4 @@ main > div.foto > p.aceitofoto-inv{font-size: 180%;
                                    line-height: 43px;
                                    text-indent: 23px;
                                    color: #eaa1cf;
-                                   background-color: #66465a91}     
+                                   background-color: #66465a91}  
