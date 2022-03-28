@@ -25,7 +25,7 @@ header{background-color: #FF7B9C;
 header > h4 {text-align: center;
              font-family:'Sriracha', cursive;
              font-size: 20.7px;
-             width: 100%;   }
+             width: 100%;}
 
 header > h1 {font-family: 'Roboto Condensed', sans-serif;
              color:#9F006C;
@@ -70,7 +70,7 @@ nav#nao > a > p{text-align: center;
 
 nav#sim > a > p:hover{background-color: rgba(0, 0, 0, 0.76);
                       color: rgb(255, 0, 234);
-                      font-family: 'Mali', cursive;  }
+                      font-family: 'Mali', cursive;}
 
 nav#sim > a > p{text-align: center;
                 padding: 160px 1px 136px 1px;
@@ -85,7 +85,7 @@ footer{background-color: #FF7B9C;
 
 footer > p{text-align: center;
            font-size: 14px;
-           font-family: Arial, Helvetica, sans-serif;  }
+           font-family: Arial, Helvetica, sans-serif;}
 
 footer > p > a{text-decoration: none;
                color: #C5539B;}
