@@ -1,38 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Te amo</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="favicons/amor.ico" type="image/x-icon">
-    
-</head>
+    <title>Parabéns, Mãe!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Parabéns, Mãe! Te Amo</h1>
+      <img src="./imagens/mae.paris.jpg" alt="Descrição da imagem" style="max-width: 15% ;border: 5px solid black;">
+      <p>Querida Caroline, queria desejar um feliz aniversário para a melhor mãe do mundo! Espero que seu dia seja cheio de amor, alegria e muitas surpresas.</p>
+      <p>Com amor, big John.</p>
+      <a href="./pagina2.html" class="botao" onclick="animarCoracoes(event)">Vamos testar o quanto voce me conhece?</a>
+      <a href="./pagina3.html" class="botao" onclick="animarCoracoes(event)">Ir para a página 3</a>
+    </div>
 
-<body>
+    <script>
+  function animarCoracoes(event) {
+    event.preventDefault();
+    const quantidadeCoracoes = 200;
+    const coracoes = [];
 
-    <header>
-        <h4>Fiz pensando na mulher da minha vida, na pessoa que eu mais amo e que eu não aguento mais não ser seu namorado. Quero que a partir de hoje seja tudo diferente e você esteja comigo até o final da minha vida. Te amo muito, meu amor! Então você...</h4>
-        <h1>QUER NAMORAR COMIGO?</h1>
-    </header>   
+    const larguraPagina = document.body.clientWidth;
+    const alturaPagina = document.body.clientHeight;
 
-    <main>
-            <p>Aperte aqui se <span style="color: rgb(255, 0, 234);">SIM</span></p>
-        <nav id="sim">
-            <a href="pagina-sim.html" rel="next"><p>SIM!<br>Quero namorar com você!</p></a>
-        </nav>
-                <br>     
-            <p>Aperte aqui se <span style="color: rgb(173, 0, 0);">NÃO</span></p>            
-        <nav id="nao">
-            <a rel="next" href="pagina-nao.html"><p>carta de suicídio.</p></a>
-        </nav>
-    </main> 
+    for (let i = 0; i < quantidadeCoracoes; i++) {
+      const coracao = document.createElement('div');
+      coracao.classList.add('coracao');
+      coracao.style.left = Math.random() * larguraPagina + 'px';
+      coracao.style.top = -Math.random() * alturaPagina + 'px';
+      document.body.appendChild(coracao);
+      coracoes.push(coracao);
+    }
 
-    <footer>
-        <p>site de <a target="_blank" href="https://github.com/gbHenderson">Gabriel Henderson</a><br>feito para pedir a morena mais linda do mundo em namoro.</p>
-    </footer>
+    setTimeout(() => {
+      coracoes.forEach((coracao) => {
+        coracao.remove();
+      });
+      window.location.href = event.target.href;
+    }, 3000);
+  }
+</script>
+   
+<style>
+.coracao {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image:  url(./imagens/coração.png);
+  background-size: contain;
+  animation-name: cair;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
+@keyframes cair {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+
+.botao {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  }
+
+.botao:hover {
+  background-color: #0069d9;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+</style>
+<footer>
+  <p>site de <a target="_blank" href=" https://joaosarruf.github.io/aniversarioCaroline/"</p>
+</footer>
 </body>
 </html>
